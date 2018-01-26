@@ -1,8 +1,8 @@
 <view class="wrap">
     <image class="wrap-bg" src="../../assets/poker-bg.jpg"></image>
     <view class="container">
-        <text type="number" bindinput="bindKeyInput">请输入房间号{{roomNum}}</text>
-        <input auto-focus/>
-        <button type="primary" binntap="join">加入</button>
+        <text>请输入房间号{{roomNum}}</text>
+        <input type="number" bindinput="bindKeyInput" auto-focus/>
+        <button type="primary" bindtap="joinRoom">加入</button>
     </view>
 </view>

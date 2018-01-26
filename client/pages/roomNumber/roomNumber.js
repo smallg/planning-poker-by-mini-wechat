@@ -8,11 +8,11 @@ Page({
         roomNum: ''
     },
 
-    join: function(){
-        console.log(this.roomNum)
+    joinRoom: function () {
+        console.log(this.data.roomNum)
     },
 
-    bindKeyInput: function(e){
+    bindKeyInput: function (e) {
         console.log(e)
         this.setData({
             roomNum: e.detail.value
