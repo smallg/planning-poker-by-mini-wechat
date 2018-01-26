@@ -20,8 +20,7 @@
         "lodash": "^4.17.4",
         "mkdir-p": "0.0.7",
         "mysql": "^2.14.1",
-        "pify": "^2.3.0",
-        "wafer-node-sdk": "^1.0.7"
+        "pify": "^2.3.0"
     },
     "devDependencies": {
         "babel-eslint": "^7.1.0",
