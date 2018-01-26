@@ -1,0 +1,28 @@
+/**app.wxss**/
+
+page {
+    height: 100%;
+}
+
+.wrap {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+.wrap .wrap-bg {
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.container {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}

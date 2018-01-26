@@ -1,0 +1,11 @@
+/* pages/roomNumber/roomNumber.wxss */
+text{
+    margin: 100rpx auto;
+}
+input{
+    border: 1px solid #dddddd;
+    margin-bottom: 100rpx;
+}
+button{
+    width: 300rpx;
+}

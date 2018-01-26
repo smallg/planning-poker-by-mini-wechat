@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="wrap">
+    <image class="wrap-bg" src="../../assets/poker-bg.jpg"></image>
+    <view class="container">
+        <view class="userinfo" bindtap="login">
+            <image class="userinfo-avatar" src="{{hasUserInfo ? userInfo.avatarUrl : './user-unlogin.png'}}" background-size="cover"></image>
+            <view>
+                <text class="userinfo-nickname">{{hasUserInfo ? userInfo.nickName : '请先登录'}}</text>
+                <text class="userinfo-nickname" wx:if="{{hasUserInfo}}">{{userInfo.lastLoginTime}}</text>
+            </view>
+        </view>
+        <view class="btn-group" wx:if="{{hasUserInfo}}">
+            <button type="primary" bindtap="joinRoom">加入已有房间</button>
+            <button type="primary" bindtap="createRoom">创建房间</button>
+        </view>
+    </view>
+</view>
