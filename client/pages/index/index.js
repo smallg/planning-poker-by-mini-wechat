@@ -64,9 +64,20 @@ Page({
             wx.getUserInfo({
                 success: res => {
                     app.globalData.userInfo = res.userInfo
+                    console.log('3', res)
                     this.setData({
                         userInfo: res.userInfo,
                         hasUserInfo: true
+                    });
+                    //save userinfo to database
+                    wx.request({
+                        url: config.service.requestUrl+'login',
+                        data: res.userInfo,
+                        method: 'POST',
+                        header: {'content-type': 'application/json'},
+                        success: function (res) {
+                            console.log(res.data)
+                        }
                     })
                 }
             })
